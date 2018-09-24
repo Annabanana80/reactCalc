@@ -1,9 +1,10 @@
 .Container{
-  background-color: green;
+  /*background-color:rgb(0,128,0);*/
   display: block;
   height: 575px;
   width: 400px;
   margin: 0 auto;
+  border: 1px solid black;
 }
 .row{
   padding-top: 25px;
