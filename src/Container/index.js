@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './Container.css';
-import Screen from '../Screen/Screen';
-import NumberButton from '../NumberButton/NumberButton';
-import OperatorButton from '../OperatorButton/OperatorButton';
-import ModifierButton from '../ModifierButton/ModifierButton';
-import AnswerButton from '../AnswerButton/AnswerButton';
-import ColorButton from '../ColorButtons/ColorButtons';
+import './index.css';
+import Screen from '../Screen/index';
+import NumberButton from '../NumberButton/index';
+import OperatorButton from '../OperatorButton/index';
+import ModifierButton from '../ModifierButton/index';
+import AnswerButton from '../AnswerButton/index';
+import ColorButton from '../ColorButtons/index';
 
 class Container extends Component {
 	constructor(props){

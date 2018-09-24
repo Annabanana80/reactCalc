@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Container from './Container/Container';
+import Container from './Container/index';
 
 
 class App extends Component {

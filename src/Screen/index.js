@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Screen.css';
+import './index.css';
 
 const Screen = (props) =>(
 	
