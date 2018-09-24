@@ -1,0 +1,9 @@
+.Screen{
+  width: 372px;
+  height: 70px;
+
+  display: block;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+}

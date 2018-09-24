@@ -1,0 +1,21 @@
+.Container{
+  background-color: green;
+  display: block;
+  height: 575px;
+  width: 400px;
+  margin: 0 auto;
+}
+.row{
+  padding-top: 25px;
+  margin: 0 auto;
+  width: 372px;
+  height: 60px;
+}
+.doubleWide{
+  width: 186px;
+ }
+ input.button.input-button, input.button.action-button{
+  /*height: 93px;*/
+  width: 93px;
+  font-size: 20px;
+ }
