@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './index.css';
-import Screen from '../Screen/index';
-import NumberButton from '../NumberButton/index';
-import OperatorButton from '../OperatorButton/index';
-import ModifierButton from '../ModifierButton/index';
-import AnswerButton from '../AnswerButton/index';
-import ColorButton from '../ColorButtons/index';
+import Screen from '../Screen';
+import NumberButton from '../NumberButton';
+import OperatorButton from '../OperatorButton';
+import ModifierButton from '../ModifierButton';
+import AnswerButton from '../AnswerButton';
+import ColorButton from '../ColorButtons';
 
 class Container extends Component {
 	constructor(props){
@@ -26,19 +26,19 @@ class Container extends Component {
 	
 	}
 	
-
+	checkValidNumber=(output)=>{
+		return(output.match(/^[-+]?\d*\.?\d*$/))
+	}
 
 	appendNumber = (number) => {
-		if(this.state.op == '' && this.state.numTwo == ''){
-			this.setState({
-				numOne: String(this.state.numOne) + String(number)
-			});
+		let numOne=this.state.numOne + number;
+		if(this.state.op == '' && this.state.numTwo == '' && this.checkValidNumber(numOne) ){
+			this.setState({numOne});
 		}
 			//once the operator is clicked, find a way to not add any more numbers to numOne
-		if(this.state.numOne !== '' && this.state.op !== ''){
-			this.setState({
-				numTwo: String(this.state.numTwo) + String(number)
-			});
+		let numTwo=this.state.numTwo + number;
+		if(this.state.numOne !== '' && this.state.op !== '' && this.checkValidNumber(numTwo)){
+			this.setState({numTwo});
 		}
 	}
 	/// make applicable to numTwo as well
